@@ -38,7 +38,7 @@ class DatasetMapper:
         else:
             self.crop_gen = None
 
-        self.tfm_gens = utils.build_transform_gen(cfg, is_train)
+        self.tfm_gens = utils.build_transform_gen(cfg, False)
 
         # fmt: off
         self.img_format     = cfg.INPUT.FORMAT
