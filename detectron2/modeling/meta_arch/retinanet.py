@@ -76,7 +76,7 @@ class RetinaNet(nn.Module):
         self.topk_candidates          = cfg.MODEL.RETINANET.TOPK_CANDIDATES_TEST
         self.nms_threshold            = cfg.MODEL.RETINANET.NMS_THRESH_TEST
         self.max_detections_per_image = cfg.TEST.DETECTIONS_PER_IMAGE
-        self.vis = True
+        self.vis = False
         # fmt: on
 
         self.backbone = build_backbone(cfg)
